@@ -7,38 +7,63 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | E-commerce product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="hamburger-menu">
+      <i class="fa fa-bars"></i>
+    </div>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+    <nav>
+      <ul>
+        <a href="#" class="nav-link">Collections</a>
+        <a href="#" class="nav-link">Men</a>
+        <a href="#" class="nav-link">Women</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Contact</a>
+      </ul>
+    </nav>
 
-  Sneaker Company
+    <a href="index.html" class="logo">
+      <img src="images/logo.svg" alt="Logo icon">
+    </a>
 
-  Fall Limited Edition Sneakers
+    <div class="cart_icon_and_pfp-container">
+      <i class="fa fa-cart-shopping"></i>
+    </div>
+    <img src="images/image-avatar.png" alt="Profile picture">
+  </header>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+  <!--  SLIDER IMAGES -->
+  <div class="slider-container">
+    <div class="slide">
+      <img src="images/image-product-1.jpg" alt="Firt product">
+    </div>
+    
+    <div class="slide">
+      <img src="images/image-product-2.jpg" alt="Second product">
+    </div>
 
-  $125.00
-  50%
-  $250.00
+    <div class="slide">
+      <img src="images/image-product-3.jpg" alt="Third product">
+    </div>
 
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="slide">
+      <img src="images/image-product-4.jpg" alt="Fourth product">
+    </div>
   </div>
+
+  <!-- NAVIGATION BUTTONS -->
+  <button class="prev" onclick="showPrev()">
+    <i class="fa fa-arrow-left"></i>
+  </button>
+  <button class="next" onclick="showNext()">
+    <i class="fa fa-arrow-right"></i>
+  </button>
+  
+  <script src="js/main.js"></script>
 </body>
 </html>
