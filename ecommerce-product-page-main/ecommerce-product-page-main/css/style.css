@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* VARIABLES */
+:root {
+    --orange: hsl(26, 100%, 55%);
+    --pale-orange: hsl(25, 100%, 94%);
+    --very-dark-blue: hsl(220, 13%, 13%);
+    --dark-grayish-blue: hsl(219, 9%, 45%);
+    --grayish-blue: hsl(220, 14%, 75%);
+    --light-grayish-blue: hsl(223, 64%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --black : hsl(0, 0%, 0%); /* with 75% opacity for lightbox background */
+}
+
+html {
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+}
+
+/* HEADER */
+header {
+    /*border: 4px solid red;*/
+    position: sticky;
+    padding: 8px 16px;
+    border-bottom: 2px solid var(--light-grayish-blue);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.navbar {
+    /*border: 3px solid yellow;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links, 
+.cart-container,
+.cart-count {
+    display: none;
+}
+
+.nav-first {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-second {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-picture img {
+    width: 30px;
+    height: 30px;
+}
+
+/* SLIDER */
+.slider-container {
+    /*border: 8px solid saddlebrown;*/
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.slider {
+    /*border: 10px solid blueviolet;*/
+    display: flex;
+}
+
+.slide {
+    min-width: 100%;
+    height: 400px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--white);
+    border: none;
+    padding: 10px 12px;
+    border-radius: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prev {
+    left: 25px;
+}
+
+.next {
+    right: 25px;
+}
