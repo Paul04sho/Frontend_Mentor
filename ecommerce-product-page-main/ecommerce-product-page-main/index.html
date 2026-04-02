@@ -5,65 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <!-- IMPORTED FONT-FAMILY -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | E-commerce product page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+ <div class="container">
   <!-- HEADER -->
-  <header class="navbar">
-    <div class="hamburger-menu">
-      <i class="fa fa-bars"></i>
-    </div>
+  <header>
+    <nav class="navbar">
+      <section class="nav-first">
+        <img src="images/icon-menu.svg" alt="hamburger menu icon">
+        <div class="logo">
+          <img src="images/logo.svg" alt="sneakers logo">
+        </div>
+        <div class="backdrop"></div>
+        <div class="nav-links">
+          <img src="images/icon-close.svg" alt="close menu icon">
+          <a href="#collections">Collections</a>
+          <a href="#men">Men</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </section>
 
-    <nav>
-      <ul>
-        <a href="#" class="nav-link">Collections</a>
-        <a href="#" class="nav-link">Men</a>
-        <a href="#" class="nav-link">Women</a>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Contact</a>
-      </ul>
+      <section class="nav-second">
+        <div class="cart">
+            <img class="cart-icon" src="images/icon-cart.svg" alt="cart icon">
+          <div class="cart-container">
+            <div class="cart-title">Cart</div>
+            <div class="cart-items empty">
+              <p class="cart-empty">Your cart is empty</p>
+            </div>
+            <button class="checkout empty">Checkout</button>
+          </div>
+          <div class="cart-count">
+            <span class="quantity">0</span>
+          </div>
+        </div>
+        <div class="profile-picture">
+          <img src="images/image-avatar.png" alt="avatar">
+        </div>
+      </section>
     </nav>
-
-    <a href="index.html" class="logo">
-      <img src="images/logo.svg" alt="Logo icon">
-    </a>
-
-    <div class="cart_icon_and_pfp-container">
-      <i class="fa fa-cart-shopping"></i>
-    </div>
-    <img src="images/image-avatar.png" alt="Profile picture">
   </header>
 
-  <!--  SLIDER IMAGES -->
+  <!-- SLIDER -->
   <div class="slider-container">
-    <div class="slide">
-      <img src="images/image-product-1.jpg" alt="Firt product">
+    <div class="slider">
+      <div class="slide">
+        <img src="images/image-product-1.jpg" alt="first product">
+      </div>
+      <div class="slide">
+        <img src="images/image-product-2.jpg" alt="second product">
+      </div>
+      <div class="slide">
+        <img src="images/image-product-3.jpg" alt="third product">
+      </div>
+      <div class="slide">
+        <img src="images/image-product-4.jpg" alt="fourth product">
+      </div>
     </div>
-    
-    <div class="slide">
-      <img src="images/image-product-2.jpg" alt="Second product">
-    </div>
-
-    <div class="slide">
-      <img src="images/image-product-3.jpg" alt="Third product">
-    </div>
-
-    <div class="slide">
-      <img src="images/image-product-4.jpg" alt="Fourth product">
-    </div>
+    <button class="prev">
+      <img src="images/icon-previous.svg" alt="previous icon">
+    </button>
+    <button class="next">
+      <img src="images/icon-next.svg" alt="next icon">
+    </button>
   </div>
-
-  <!-- NAVIGATION BUTTONS -->
-  <button class="prev" onclick="showPrev()">
-    <i class="fa fa-arrow-left"></i>
-  </button>
-  <button class="next" onclick="showNext()">
-    <i class="fa fa-arrow-right"></i>
-  </button>
+ </div>
   
   <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/cart.js"></script>
 </body>
 </html>
