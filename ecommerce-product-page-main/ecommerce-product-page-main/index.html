@@ -16,70 +16,107 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- <div class="container">
-  <!-- HEADER -->
+  <div class="overlay"></div>
   <header>
-    <nav class="navbar">
-      <section class="nav-first">
-        <img src="images/icon-menu.svg" alt="hamburger menu icon">
-        <div class="logo">
-          <img src="images/logo.svg" alt="sneakers logo">
-        </div>
-        <div class="backdrop"></div>
-        <div class="nav-links">
-          <img src="images/icon-close.svg" alt="close menu icon">
-          <a href="#collections">Collections</a>
-          <a href="#men">Men</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </section>
+    <section class="nav-left">
+      <a class="openSidebar">
+        <img class="hamburger" src="images/icon-menu.svg" alt="open button">
+      </a>
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <nav class="navbar">
+          <ul class="navbar-content">
+            <a class="closeSidebar">
+              <img class="close" src="images/icon-close.svg" alt="close button">
+            </a>
+              <li><a href="#" class="nav-item">Collections</a></li>
+              <li><a href="#" class="nav-item">Men</a></li>
+              <li><a href="#" class="nav-item">Women</a></li>
+              <li><a href="#" class="nav-item">About</a></li>
+              <li><a href="#" class="nav-item">Contact</a></li>
+          </ul>
+      </nav>
+    </section>
 
-      <section class="nav-second">
-        <div class="cart">
-            <img class="cart-icon" src="images/icon-cart.svg" alt="cart icon">
-          <div class="cart-container">
-            <div class="cart-title">Cart</div>
-            <div class="cart-items empty">
-              <p class="cart-empty">Your cart is empty</p>
-            </div>
+    <section class="nav-right">
+      <div class="cart">
+        <img class="cart-btn" src="images/icon-cart.svg" alt="cart icon">
+        <div class="cart-container">
+          <div class="cart-title">Cart</div>
+          <div class="cart-items empty">
+            <p class="cart-empty">Your cart is empty</p>
+          </div>
             <button class="checkout empty">Checkout</button>
           </div>
           <div class="cart-count">
             <span class="quantity">0</span>
           </div>
-        </div>
-        <div class="profile-picture">
-          <img src="images/image-avatar.png" alt="avatar">
-        </div>
-      </section>
-    </nav>
+      </div>
+      <div class="profile-picture">
+        <img src="images/image-avatar.png" alt="profile picture">
+      </div>
+    </section>
   </header>
 
-  <!-- SLIDER -->
-  <div class="slider-container">
-    <div class="slider">
-      <div class="slide">
-        <img src="images/image-product-1.jpg" alt="first product">
+  <main>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide">
+          <img src="images/image-product-1.jpg" alt="first product">
+        </div>
+        <div class="slide">
+          <img src="images/image-product-2.jpg" alt="second product">
+        </div>
+        <div class="slide">
+          <img src="images/image-product-3.jpg" alt="third product">
+        </div>
+        <div class="slide">
+          <img src="images/image-product-4.jpg" alt="fourth product">
+        </div>
       </div>
-      <div class="slide">
-        <img src="images/image-product-2.jpg" alt="second product">
-      </div>
-      <div class="slide">
-        <img src="images/image-product-3.jpg" alt="third product">
-      </div>
-      <div class="slide">
-        <img src="images/image-product-4.jpg" alt="fourth product">
-      </div>
+      <button class="prev">
+        <img src="images/icon-previous.svg" alt="previous icon">
+      </button>
+      <button class="next">
+        <img src="images/icon-next.svg" alt="next icon">
+      </button>
     </div>
-    <button class="prev">
-      <img src="images/icon-previous.svg" alt="previous icon">
-    </button>
-    <button class="next">
-      <img src="images/icon-next.svg" alt="next icon">
-    </button>
-  </div>
- </div>
+
+    <div class="content">
+      <h3>Sneaker Company</h3>
+      <h2>Fall Limited Edition Sneakers</h2>
+      <p class="product-desc">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+     <div class="price-info">
+      <div class="price">
+        <span class="current-price">$125.00</span>
+        <span class="discount">50%</span>
+      </div>
+      <div class="previous-price">$250.00</div>
+     </div>
+
+     <div class="add-to-cart-container">
+      <div class="counter">
+        <button class="minus">
+          <img src="images/icon-minus.svg" alt="minus icon">
+        </button>
+        <span class="count">0</span>
+        <button class="plus">
+          <img src="images/icon-plus.svg" alt="plus icon">
+        </button>
+      </div>
+      <div class="add-to-cart">
+        <button class="add-to-cart-btn">
+          <img style="filter: brightness(0); width: 16px;" src="images/icon-cart.svg" alt="cart icon">
+          <span>Add to cart</span>
+        </button>
+      </div>
+     </div>
+    </div>
+  </main>
   
   <script src="js/main.js"></script>
   <script src="js/slider.js"></script>
